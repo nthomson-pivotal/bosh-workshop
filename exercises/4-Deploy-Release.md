@@ -6,7 +6,7 @@ In this exercise we will deploy an existing Zookeeper release to our BOSH direct
 
 We will be using an included BOSH manifest file to get started. Download the file from here:
 
-```TODO```
+```https://raw.githubusercontent.com/nthomson-pivotal/bosh-workshop/master/assets/manifest.yml```
 
 You can open the manifest in your favorite text editor and inspect it.
 
