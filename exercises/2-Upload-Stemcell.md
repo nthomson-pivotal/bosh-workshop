@@ -21,11 +21,11 @@ GCP: https://bosh.io/stemcells/bosh-google-kvm-ubuntu-xenial-go_agent
 Then issue the command to upload the particular stemcell to the BOSH director. An example for Azure
 would look like:
 
-```bosh upload-stemcell --sha1 6432f6f83239a3c8383e05d397ee04d06aae729e \
-  https://bosh.io/d/stemcells/bosh-azure-hyperv-ubuntu-xenial-go_agent?v=250.25```
+bosh upload-stemcell --sha1 6432f6f83239a3c8383e05d397ee04d06aae729e \
+  https://bosh.io/d/stemcells/bosh-azure-hyperv-ubuntu-xenial-go_agent?v=250.25
 
 If the IaaS you are using does not support Light stemcells (Azure, vSphere, OpenStack), this operation may take a while.
 
 Once the upload has completed, you can again inspect the stemcells on the director to confirm it is present:
 
-```bosh stemcells```
+bosh stemcells
