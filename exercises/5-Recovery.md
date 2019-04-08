@@ -32,7 +32,7 @@ a network card failure, which will cause BOSH to lose contact with the agent on 
 
 Execute the following command to remotely trigger the failure:
 
-``` ```
+```bosh -d zookeeper ssh zookeeper/<instance id> -c 'sudo ifdown eth0 & exit```
 
 Over the next 10-15 minutes BOSH will detect the failed VM and rebuild it from scratch. You can watch this process unfold
 through the `bosh vms` command, as well as watching the `bosh events` log for the Zookeeper deployment.
